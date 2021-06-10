@@ -1,0 +1,658 @@
+/* 
+    Structure is made by Arun Abraham
+    please keep this structure to get organised
+    ___________________________________________
+
+    Table of content
+    ----------------
+    | 
+    |  * 1-variables
+    |  -------------
+    |  |
+    |  | * _color.scss ("holds all color variables edit here to change color")
+    |  | * _size.scss ("holds all size variables edit here to change size")
+    |  *
+    |  |
+    |  * 2-modules
+    |  -----------
+    |  |
+    |  | * _fonts.scss ("holds all font related stylings and imports")
+    |  | * _functions.scss ("holds all rule sets")
+    |  | * _mixins.scss ("holds all reusable mixins")
+    |  *
+    |  |
+    |  * 3-utilities
+    |  -------------
+    |  |
+    |  | * _resets.scss("reseting all default browser styles etc..")
+    |  | * _theme.scss("holds the bg,text,border,color,shadow,gradients,etc..")
+    |  | * _layout.scss("layout setting")
+    |  *
+    |  |
+    |  * 4-components
+    |  --------------
+    |  |
+    |  | * _button.scss("holds all button styles")
+    |  | * _cards.scss("holds all cards style")
+    |  | * _form.scss("holds all forms styles")
+    |  | * _modal.scss("holds all modal related styles")
+    |  | * _tables.scss("holds all table related styles")
+    |  | * _top-bar.scss("holds the top-bar styling")
+    |  | * _side-bar.scss("holds the side-bar styling")
+    |  | * _footer.scss("holds the footer styling")
+    |  *
+    |  |
+    |  * 5-pages
+    |  --------------
+    |  |
+    |  | * _index.scss("holds the bg,text,border,etc..")
+    |  *
+    |  |
+    |  * 6-responsive
+    |  --------------
+    |  |
+    |  | * _responsive.scss("responsive media query")
+    |  *
+    |  |
+    |  * 7-vendor
+    |  --------------
+    |  |
+    |  |  * vendor-1
+    |  |  --------------
+    |  |  |
+    |  |  |  * _vendor-1.1.scss("3rd party css libraries")
+    |  |  |  * _vendor-1.2.scss("3rd party css libraries")
+    |  |  |  
+    |  |  * vendor-2
+    |  |  --------------
+    |  |  |
+    |  |  |  * _vendor-2.1.scss("3rd party css libraries")
+    |  |  |  * _vendor-2.2.scss("3rd party css libraries")
+    |  |  |
+    |  |  * - 
+    |  * -
+    * -  
+    
+    */
+/*  1-variables  */
+/*  2-modules  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.fz-10 {
+  font-size: 10px !important;
+}
+
+.fz-11 {
+  font-size: 11px !important;
+}
+
+.fz-12 {
+  font-size: 12px !important;
+}
+
+.fz-13 {
+  font-size: 13px !important;
+}
+
+.fz-14 {
+  font-size: 14px !important;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+/*  3-utilities  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  box-shadow: none !important;
+}
+
+.shadow-1 {
+  box-shadow: 0px 2px 4px #e2e2e2;
+}
+
+/*  4-components  */
+.gcard {
+  padding: 10px;
+  background: #fff;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.gcard__gimg {
+  display: block;
+  margin-top: auto;
+  width: 75%;
+}
+
+.gcard__img {
+  width: 50px;
+}
+
+.gcard__detail {
+  padding-left: 15px;
+  width: calc(100% - 50px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: fit-content;
+}
+
+.gcard__detail--title {
+  font-size: 13px;
+  width: 100%;
+}
+
+.gcard__detail--price {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.gcard__detail--subtitle {
+  font-size: 11px;
+}
+
+.search-box {
+  height: 100%;
+  max-width: 350px;
+  position: relative;
+}
+
+.search-box input {
+  width: 90%;
+  padding-left: 30px;
+  height: 100%;
+  color: #BCBCBC;
+  border: none;
+  font-size: 13px;
+  outline: none !important;
+  box-shadow: 0px 0px 4px #e2e2e2;
+  border-radius: 40px;
+}
+
+.search-box i {
+  color: #BCBCBC;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  font-size: 13px;
+}
+
+.topbar {
+  height: 60px;
+  display: flex;
+}
+
+.topbar__lmenu, .topbar__rmenu {
+  padding: 15px !important;
+  height: fit-content;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black !important;
+  font-size: 18px;
+}
+
+.topbar__lmenu span, .topbar__rmenu span {
+  margin-top: 4px;
+}
+
+.topbar__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px !important;
+  height: fit-content;
+}
+
+.topbar__content--lsec {
+  align-items: center;
+  width: 215px;
+}
+
+.topbar__content--rsec {
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+
+.topbar__content--rsec button {
+  position: relative;
+}
+
+.topbar__content--rsec button .notification {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: -1px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #146db6;
+}
+
+.topbar__content--rsec button .notification.active {
+  display: block;
+}
+
+.dash-body {
+  width: 100vw;
+  overflow-x: hidden;
+  height: calc(100vh - 60px);
+  background: #000;
+  display: flex;
+}
+
+.dash-body__lmenu, .dash-body__rmenu {
+  width: 60px;
+  background: #fff;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dash-body .lmenu-list {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.dash-body .lmenu-item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.dash-body .lmenu-item img {
+  display: block;
+  width: 20px;
+  margin: 0px auto;
+  margin-bottom: 5px;
+}
+
+.dash-body .lmenu-item img.active {
+  display: none;
+}
+
+.dash-body .lmenu-item label {
+  font-size: 9px;
+}
+
+.dash-body .lmenu-item.active {
+  position: relative;
+}
+
+.dash-body .lmenu-item.active img {
+  display: none;
+}
+
+.dash-body .lmenu-item.active img.active {
+  display: block;
+}
+
+.dash-body .lmenu-item.active label {
+  color: #146db6;
+}
+
+.dash-body .lmenu-item.active:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 3px;
+  background: #146db6;
+}
+
+.content {
+  background: #FAFAFA;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.09);
+  display: flex;
+  padding: 15px;
+  height: 100%;
+}
+
+.content__listing {
+  width: 200px;
+  height: 100%;
+}
+
+.content__listing--menu {
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #fff;
+  height: 35px;
+  align-items: center;
+  box-shadow: 0px 2px 4px #e2e2e2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__listing--menu span, .content__listing--menu i {
+  font-size: 13px !important;
+}
+
+.content__listing--sec {
+  box-shadow: 0px 2px 4px #e2e2e2;
+  margin-top: 5px;
+  height: calc(100vh - 130px);
+  overflow-y: scroll;
+  background: #fff;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.content__listing--sec::-webkit-scrollbar {
+  width: 5px;
+}
+
+.content__listing--sec::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.content__listing--sec::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background: #1989e4;
+}
+
+.content__listing--item {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  line-height: 12px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.content__listing--item label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__listing--item label:first-child span:first-child {
+  font-weight: 600;
+}
+
+.content__listing--item label:last-child {
+  font-size: 13px;
+}
+
+.content__listing--item label span:last-child {
+  text-align: right;
+}
+
+.content__body {
+  padding-left: 15px;
+}
+
+.content__body .alert {
+  margin-bottom: 0;
+  height: 35px;
+  padding: 0px 10px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content__body .alert__message {
+  min-width: 400px;
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content__body .alert__controls {
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__body .alert__controls .btn {
+  font-size: 13px;
+}
+
+.lmenu-hide {
+  margin-left: -70px;
+}
+
+.rmenu-hide {
+  margin-right: -70px;
+}
+
+.graph-sec {
+  display: flex;
+}
+
+.side-info {
+  height: calc(100vh - 290px);
+  width: 250px;
+}
+
+.user-sec {
+  font-size: 13px;
+}
+
+.user-sec img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.menu-primary {
+  margin-top: 9px;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-primary .nav-pills .nav-link.active, .menu-primary .nav-pills .show > .nav-link {
+  color: #000;
+  background: #fff0;
+}
+
+.menu-primary .nav-pills .nav-link {
+  padding: 0;
+  padding-right: 20px;
+  color: #888888;
+}
+
+.menu-primary .btn {
+  font-size: 13px;
+}
+
+.menu-primary__content {
+  background: #ffffff;
+  height: calc(100vh - 290px);
+  margin-top: 13px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px #e2e2e2;
+  border-radius: 4px;
+}
+
+.menu-secondary {
+  padding: 8px 10px 0px;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.menu-secondary .nav-pills .nav-link.active, .menu-secondary .nav-pills .show > .nav-link {
+  color: #000;
+  background: #fff0;
+  border-bottom: 2px solid #146db6;
+}
+
+.menu-secondary .nav-pills .nav-link {
+  padding: 0 5px;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  color: #888888;
+  border-radius: 0px;
+}
+
+.menu-secondary .btn {
+  font-size: 13px;
+}
+
+.menu-secondary__content {
+  padding: 15px;
+  background: #ffffff;
+  height: calc(100vh - 290px);
+  margin-top: 13px;
+  box-shadow: 0px 2px 4px #e2e2e2;
+  border-radius: 4px;
+}
+
+.accordion-sec {
+  height: calc(100vh - 326px);
+  overflow-y: scroll;
+}
+
+.accordion-sec::-webkit-scrollbar {
+  width: 5px;
+}
+
+.accordion-sec::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.accordion-sec::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background: #1989e4;
+}
+
+.accordion-sec .accordion-button {
+  border-bottom: 1px solid #e2e2e2;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.accordion-sec .accordion-button:not(.collapsed) {
+  background: #fff;
+}
+
+.accordion-sec .accordion-item {
+  border-radius: 0px;
+  border: none;
+}
+
+.accordion-sec .accordion-button::after {
+  background-size: 16px;
+  background-position: center;
+}
+
+.menu-info {
+  padding: 8px 08px 0px;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.menu-info .nav-pills .nav-link.active, .menu-info .nav-pills .show > .nav-link {
+  color: #000;
+  background: #fff0;
+  border-bottom: 2px solid #146db6;
+}
+
+.menu-info .nav-pills .nav-link {
+  padding: 0 5px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+  color: #888888;
+  border-radius: 0px;
+}
+
+.menu-info .btn {
+  font-size: 13px;
+}
+
+.menu-info__content {
+  padding: 15px;
+  background: #ffffff;
+  height: calc(100vh - 290px);
+  margin-top: 13px;
+  box-shadow: 0px 2px 4px #e2e2e2;
+  border-radius: 4px;
+}
+
+/*  5-pages  */
+/*  6-responsive  */
+/*  7-vendor  */
+/*# sourceMappingURL=main.css.map */

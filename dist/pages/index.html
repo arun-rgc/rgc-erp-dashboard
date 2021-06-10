@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/uikit.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- WEB APP -->
+
+    <div class="container-fluid p-0">
+
+        <!-- topbar -->
+            <div class="container-fluid topbar p-0">
+                <button for="" class="btn topbar__lmenu" onclick="lmenu()">
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                </button>
+                <div class="topbar__content col">
+                    <div class="topbar__content--lsec">
+                        <img src="../assets/logo.png" alt="logo" class="logo">
+                    </div>
+                    <div class="topbar__content--csec col">
+                        <div class="search-box">
+                            <i class="bi bi-search"></i>
+                            <input type="text" name="search" id="search" placeholder="Enter your query to search...">
+                        </div>
+                    </div>
+                    <div class="topbar__content--rsec">
+                        <button class="btn p-0 me-3">
+                            <i class="bi bi-link-45deg"></i>
+                            <span class="notification"></span>
+                        </button>
+                        <button class="btn p-0 me-3">
+                            <i class="bi bi-plus-square"></i>
+                            <span class="notification"></span>
+                        </button>
+                        <button class="btn p-0 me-3">
+                            <i class="bi bi-bell"></i>
+                            <span class="notification active"></span>
+                        </button>
+                        <button class="btn p-0 me-3">
+                            <i class="bi bi-chat-left"></i>
+                            <span class="notification active"></span>
+                        </button>
+                        <div class="user-sec ms-3">
+                            <label for="" class="mb-0 me-1">William Joskinode</label>
+                            <img src="../assets/avatar 1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <button for="" class="btn topbar__rmenu" onclick="rmenu()">
+                    <span uk-icon="menu"></span>
+                </button>
+            </div>
+        <!-- topbar ends -->
+
+        <!-- body -->
+        
+        <div class="container-fluid p-0 dash-body">
+
+            <!-- left menu -->
+            <div id="lmenu" class="dash-body__lmenu">
+                <div class="lmenu-list">
+                    <label for="" class="lmenu-item active">
+                        <img class="" src="../assets/icons/dashboard.svg" alt="" srcset="">
+                        <img class="active" src="../assets/icons/dashboard-active.svg" alt="" srcset="">
+                        <label for="">Dashboard</label>
+                    </label>
+                    <label for="" class="lmenu-item ">
+                        <img class="" src="../assets/icons/module.svg" alt="" srcset="">
+                        <img class="active" src="../assets/icons/module-active.svg" alt="" srcset="">
+                        <label for="">Module</label>
+                    </label>
+                    <label for="" class="lmenu-item ">
+                        <img class="" src="../assets/icons/apps.svg" alt="" srcset="">
+                        <img class="active" src="../assets/icons/apps-active.svg" alt="" srcset="">
+                        <label for="">Apps</label>
+                    </label>
+                    <label for="" class="lmenu-item ">
+                        <img class="" src="../assets/icons/workplace.svg" alt="" srcset="">
+                        <img class="active" src="../assets/icons/workplace-active.svg" alt="" srcset="">
+                        <label for="">Workplace</label>
+                    </label>
+                    <label for="" class="lmenu-item ">
+                        <img class="" src="../assets/icons/setting.svg" alt="" srcset="">
+                        <img class="active" src="../assets/icons/setting-active.svg" alt="" srcset="">
+                        <label for="">Configuration</label>
+                    </label>
+                </div>
+                <div class="lmenu-list mt-auto">
+                    <label for="" class="lmenu-item">
+                        <img class="" src="../assets/icons/marketplace.svg" alt="" srcset="">
+                        <img class="active" src="../assets/icons/marketplace-active.svg-active.svg" alt="" srcset="">
+                        <label for="">Market</label>
+                    </label>
+                    <label for="" class="lmenu-item ">
+                        <img class="" src="../assets/icons/help.svg" alt="" srcset="">
+                        <img class="active" src="../assets/icons/help-active.svg" alt="" srcset="">
+                        <label for="">Help</label>
+                    </label>
+                    
+                </div>
+            </div>
+            <!-- left menu ends -->
+            
+            <!-- content -->
+                <div class="col content">
+                    
+                    <!-- listing -->
+                        <div class="content__listing">
+
+                            <!-- list menu -->
+                            <div class="content__listing--menu">
+                                <button class="btn p-0"><i class="bi bi-eye-slash"></i></button>
+                                <button class="btn p-0"><i class="bi bi-search"></i></button>
+                                <button class="btn p-0"><i class="bi bi-funnel"></i></button>
+                                <button class="btn p-0"><i class="bi bi-sort-up-alt"></i></button>
+                                <button class="btn p-0"><i class="bi bi-plus-circle"></i></button>
+                            </div>
+                            <!-- list menu ends -->
+
+
+                            <!-- list container -->
+                            <div class="content__listing--sec">
+                                <!-- list item -->
+                                <div class="content__listing--item">
+                                    <label for="">
+                                        <span>ENTY00130</span>
+                                        <span>02/01/2021 10:12<br> PM</span>
+                                    </label>
+                                    <label for="">
+                                        Organization name
+                                    </label>
+                                </div>
+                                <!-- list item ends -->
+                                <!-- list item -->
+                                <div class="content__listing--item">
+                                    <label for="">
+                                        <span>ENTY00130</span>
+                                        <span>02/01/2021 10:12<br> PM</span>
+                                    </label>
+                                    <label for="">
+                                        Organization name
+                                    </label>
+                                </div>
+                                <!-- list item ends -->
+                                <!-- list item -->
+                                <div class="content__listing--item">
+                                    <label for="">
+                                        <span>ENTY00130</span>
+                                        <span>02/01/2021 10:12<br> PM</span>
+                                    </label>
+                                    <label for="">
+                                        Organization name
+                                    </label>
+                                </div>
+                                <!-- list item ends -->
+                                <!-- list item -->
+                                <div class="content__listing--item">
+                                    <label for="">
+                                        <span>ENTY00130</span>
+                                        <span>02/01/2021 10:12<br> PM</span>
+                                    </label>
+                                    <label for="">
+                                        Organization name
+                                    </label>
+                                </div>
+                                <!-- list item ends -->
+                                <!-- list item -->
+                                <div class="content__listing--item">
+                                    <label for="">
+                                        <span>ENTY00130</span>
+                                        <span>02/01/2021 10:12<br> PM</span>
+                                    </label>
+                                    <label for="">
+                                        Organization name
+                                    </label>
+                                </div>
+                                <!-- list item ends -->
+                                <!-- list item -->
+                                <div class="content__listing--item">
+                                    <label for="">
+                                        <span>ENTY00130</span>
+                                        <span>02/01/2021 10:12<br> PM</span>
+                                    </label>
+                                    <label for="">
+                                        Organization name
+                                    </label>
+                                </div>
+                                <!-- list item ends -->
+                                <!-- list item -->
+                                <div class="content__listing--item">
+                                    <label for="">
+                                        <span>ENTY00130</span>
+                                        <span>02/01/2021 10:12<br> PM</span>
+                                    </label>
+                                    <label for="">
+                                        Organization name
+                                    </label>
+                                </div>
+                                <!-- list item ends -->
+                                <!-- list item -->
+                                <div class="content__listing--item">
+                                    <label for="">
+                                        <span>ENTY00130</span>
+                                        <span>02/01/2021 10:12<br> PM</span>
+                                    </label>
+                                    <label for="">
+                                        Organization name
+                                    </label>
+                                </div>
+                                <!-- list item ends -->
+                                <!-- list item -->
+                                <div class="content__listing--item">
+                                    <label for="">
+                                        <span>ENTY00130</span>
+                                        <span>02/01/2021 10:12<br> PM</span>
+                                    </label>
+                                    <label for="">
+                                        Organization name
+                                    </label>
+                                </div>
+                                <!-- list item ends -->
+                                <!-- list item -->
+                                <div class="content__listing--item">
+                                    <label for="">
+                                        <span>ENTY00130</span>
+                                        <span>02/01/2021 10:12<br> PM</span>
+                                    </label>
+                                    <label for="">
+                                        Organization name
+                                    </label>
+                                </div>
+                                <!-- list item ends -->
+                                <!-- list item -->
+                                <div class="content__listing--item">
+                                    <label for="">
+                                        <span>ENTY00130</span>
+                                        <span>02/01/2021 10:12<br> PM</span>
+                                    </label>
+                                    <label for="">
+                                        Organization name
+                                    </label>
+                                </div>
+                                <!-- list item ends -->
+
+                            </div>
+                            <!-- list container ends -->
+                        </div>
+                    <!-- listing ends -->
+
+                    <!-- body -->
+                    <div class="content__body col">
+                        <div class="alert alert-primary" role="alert">
+                            <span class="alert__message">As an exercise, recreate the behavior of users when they tap on the More button</span>
+                            <div class="alert__controls">
+                                <button class="btn p-0">
+                                    <i class="bi bi-bell"></i>
+                                    <span class="ms-1">Remaind me later</span>
+                                </button>
+                                <button class="btn p-0">
+                                    <span>My actions</span>
+                                </button>
+                                <button class="btn p-0">
+                                    <i class="bi bi-x"></i>
+                                </button>
+                            </div>
+                        </div>
+                         <!-- graph section -->
+                         <div class="graph-sec row">
+                            <div class="col-3 p-3">
+                                <div class="gcard">
+                                    <img class="gcard__img" src="../assets/icons/dollar.svg" alt="">
+                                    <div class="gcard__detail">
+                                        <label class="gcard__detail--title" for="">Total sale</label>
+                                        <label class="gcard__detail--price" for="">16,254.85</label>
+                                        <label class="gcard__detail--subtitle" for="">Value percentage <span>73.6%</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 p-3">
+                                <div class="gcard">
+                                    <img class="gcard__img" src="../assets/icons/sales.svg" alt="">
+                                    <div class="gcard__detail">
+                                        <label class="gcard__detail--title" for="">Total sale</label>
+                                        <label class="gcard__detail--price" for="">16,254.85</label>
+                                        <label class="gcard__detail--subtitle" for="">Value percentage <span>73.6%</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 p-3">
+                                <div class="gcard">
+                                    <img class="gcard__img" src="../assets/icons/dollar.svg" alt="">
+                                    <div class="gcard__detail">
+                                        <label class="gcard__detail--title" for="">Total sale</label>
+                                        <label class="gcard__detail--price" for="">16,254.85</label>
+                                        <label class="gcard__detail--subtitle" for="">Value percentage <span>73.6%</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 p-3">
+                                <div class="gcard">
+                                    <label class="fz-13 fw-500 w-100" for="">Graph</label>
+                                    <img class="gcard__gimg" src="../assets/graph.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- graph section -->
+
+                        <!-- primary menu -->
+                        <div class="menu-primary">
+                            <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="pills-organisation-tab" data-bs-toggle="pill" data-bs-target="#pills-organisation" type="button" role="tab" aria-controls="pills-organisation" aria-selected="true">Organizations</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-businessunit-tab" data-bs-toggle="pill" data-bs-target="#pills-businessunit" type="button" role="tab" aria-controls="pills-businessunit" aria-selected="false">Business unit</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-operationunit-tab" data-bs-toggle="pill" data-bs-target="#pills-operationunit" type="button" role="tab" aria-controls="pills-operationunit" aria-selected="false">Operation unit</button>
+                                </li>
+                            </ul>
+                            <div class="d-flex">
+                                <button class="btn p-0 me-3">
+                                    <i class="bi bi-bar-chart-fill"></i>
+                                </button>
+                                <button class="btn p-0 me-3">
+                                    <i class="bi bi-arrows-angle-expand"></i>
+                                </button>
+                                <button class="btn p-0">
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <!-- primary menu content -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <!-- first menu item content -->
+                            <div class="tab-pane fade show active" id="pills-organisation" role="tabpanel" aria-labelledby="pills-organisation-tab">
+                               <div class="menu-primary__content">
+                                   <!-- Secondary menu -->
+                                    <div class="menu-secondary">
+                                        <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link active" id="pills-general-tab" data-bs-toggle="pill" data-bs-target="#pills-general" type="button" role="tab" aria-controls="pills-general" aria-selected="true">Genaral</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link" id="pills-dimensions-tab" data-bs-toggle="pill" data-bs-target="#pills-dimensions" type="button" role="tab" aria-controls="pills-dimensions" aria-selected="false">Dimensions</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link" id="pills-legal-tab" data-bs-toggle="pill" data-bs-target="#pills-legal" type="button" role="tab" aria-controls="pills-legal" aria-selected="false">Legal</button>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex">
+                                            <button class="btn p-0 me-3">
+                                                <i class="bi bi-bar-chart-fill"></i>
+                                            </button>
+                                            <button class="btn p-0 me-3">
+                                                <i class="bi bi-arrows-angle-expand"></i>
+                                            </button>
+                                            <button class="btn p-0">
+                                                <i class="bi bi-three-dots-vertical"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- secondary menu ends -->
+
+                                    <!-- secondary menu content -->
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <!-- secondary menu item one -->
+                                        <div class="tab-pane fade show active" id="pills-general" role="tabpanel" aria-labelledby="pills-general-tab">
+                                           <div class="d-flex">
+                                               <!-- secondary menu content accordion -->
+                                               <div class="col p-3 accordion-sec">
+                                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="profile-head">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#profile-body" aria-expanded="true" aria-controls="profile-body">
+                                                            Profile
+                                                        </button>
+                                                      </h2>
+                                                      <div id="profile-body" class="accordion-collapse collapse show" aria-labelledby="profile-head">
+                                                        <div class="accordion-body">
+                                                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="identification-head">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#identification-body" aria-expanded="false" aria-controls="identification-body">
+                                                            Identification
+                                                        </button>
+                                                      </h2>
+                                                      <div id="identification-body" class="accordion-collapse collapse" aria-labelledby="identification-head">
+                                                        <div class="accordion-body">
+                                                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="address-head">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#address-body" aria-expanded="false" aria-controls="address-body">
+                                                            Address
+                                                        </button>
+                                                      </h2>
+                                                      <div id="address-body" class="accordion-collapse collapse" aria-labelledby="address-head">
+                                                        <div class="accordion-body">
+                                                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                               </div>
+                                               <!-- secondary menu content accordion ends -->
+
+                                               <!-- secondary menu content info -->
+                                               <div class="side-info">
+                                                   <div class="menu-info">
+                                                        <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+                                                            <li class="nav-item" role="presentation">
+                                                            <button class="nav-link active" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-info" aria-selected="true">Information</button>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="pills-action-tab" data-bs-toggle="pill" data-bs-target="#pills-action" type="button" role="tab" aria-controls="pills-businessunit" aria-selected="false">Action</button>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="pills-settings-tab" data-bs-toggle="pill" data-bs-target="#pills-settings" type="button" role="tab" aria-controls="pills-operationunit" aria-selected="false">Settings</button>
+                                                            </li>
+                                                        </ul>
+                                                   </div>
+                                                   <div class="tab-content" id="pills-tabContent"></div>
+                                                        <!-- secondary menu item two -->
+                                                        <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
+                                                            <!-- secondary menu content accordion -->
+                                                            <div class="col p-3 accordion-sec">
+                                                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                                                    <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="profile1-head">
+                                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#profile1-body" aria-expanded="false" aria-controls="profile1-body">
+                                                                            Profile
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="profile1-body" class="accordion-collapse collapse" aria-labelledby="profile1-head">
+                                                                        <div class="accordion-body">
+                                                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                    <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="identification1-head">
+                                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#identification1-body" aria-expanded="false" aria-controls="identification1-body">
+                                                                            Identification
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="identification1-body" class="accordion-collapse collapse" aria-labelledby="identification1-head">
+                                                                        <div class="accordion-body">
+                                                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                    <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="address1-head">
+                                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#address1-body" aria-expanded="false" aria-controls="address1-body">
+                                                                            Address
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="address1-body" class="accordion-collapse collapse" aria-labelledby="address1-head">
+                                                                        <div class="accordion-body">
+                                                                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- secondary menu content accordion ends -->
+                                                        </div>
+                                                        <!-- secondary menu item two ends -->
+                                                        
+                                                        <!-- secondary menu item three -->
+                                                        <div class="tab-pane fade" id="pills-action" role="tabpanel" aria-labelledby="pills-action-tab">...</div>
+                                                        <!-- secondary menu item three -->
+
+                                                        <!-- secondary menu item two -->
+                                                        <div class="tab-pane fade" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab">...</div>
+                                                        <!-- secondary menu item two ends -->
+                                                    </div> 
+                                               </div>
+                                               <!-- secondary menu content info ends-->
+                                           </div>
+                                        </div>
+                                        <!-- secondary menu item one ends -->
+
+                                        <!-- secondary menu item two -->
+                                        <div class="tab-pane fade" id="pills-dimensions" role="tabpanel" aria-labelledby="pills-dimensions-tab">...</div>
+                                        <!-- secondary menu item two ends -->
+                                        
+                                        <!-- secondary menu item three -->
+                                        <div class="tab-pane fade" id="pills-legal" role="tabpanel" aria-labelledby="pills-legal-tab">...</div>
+                                        <!-- secondary menu item three -->
+                                    </div>    
+                                    <!-- secondary menu content -->
+                               </div>
+                            </div>
+                            <!-- first menu item content ends-->
+
+                            <!-- second menu item content -->
+                            <div class="tab-pane fade" id="pills-businessunit" role="tabpanel" aria-labelledby="pills-businessunit-tab">...</div>
+                            <!-- second menu item content ends -->
+
+                            <!-- third menu item content -->
+                            <div class="tab-pane fade" id="pills-operationunit" role="tabpanel" aria-labelledby="pills-operationunit-tab">...</div>
+                            <!-- third menu item content ends -->
+                        </div>
+                        <!-- primary menu content -->
+                    </div>
+                    <!-- body ends -->
+
+                </div>
+            <!-- content ends -->
+
+            <!-- right menu -->
+                <div id="rmenu" class="dash-body__rmenu"></div>
+            <!-- right menu ends -->
+        </div>
+
+        <!-- body ends -->
+
+    </div>
+
+    <!-- WEB APP -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+
+    <script src="../js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@mixin d-flex {
+    display: flex;
+}
+@mixin d-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin flex-center {
+    align-items:center;
+    justify-content: center;
+}
+@mixin scroll-1 {
+    &::-webkit-scrollbar {
+        width: 5px;
+        
+    }
+      
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+       
+    &::-webkit-scrollbar-thumb {
+        border-radius: 40px;
+        background: lighten($primary, 10%);  
+    }
+}
+@mixin shadow-1 {
+    box-shadow:$shadow-1;
+}
+@mixin shadow-2 {
+    box-shadow:$shadow-2;
+}
+@mixin text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

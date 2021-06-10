@@ -1,0 +1,24 @@
+.search-box{
+    height: 100%;
+    max-width: 350px;
+    position: relative;
+    input{
+        width: 90%;
+        padding-left: 30px;
+        height: 100%;
+        color: #BCBCBC;
+        border: none;
+        font-size: 13px;
+        outline: none !important;
+        @include shadow-2;
+        border-radius: 40px;
+    }
+    i{  
+        color: #BCBCBC;
+        position:absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        font-size: 13px;
+    }
+}

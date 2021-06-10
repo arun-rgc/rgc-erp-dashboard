@@ -1,0 +1,112 @@
+.menu-primary{
+    margin-top: 9px;
+    font-size: 13px;
+    @include d-flex-wrap;
+    justify-content: space-between;
+    align-items: center;
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        color: #000;
+        background: #fff0;
+    }
+    .nav-pills .nav-link{
+        padding: 0;
+        padding-right: 20px;
+        color: #888888;
+    }
+    .btn{
+        font-size: 13px;
+    }
+    &__content{
+        // padding: 15px;
+        background: #ffffff;
+        height: calc(100vh - 290px);
+        margin-top: 13px;
+        overflow: hidden;
+        @include shadow-1;
+        border-radius: 4px;
+    }
+}
+
+.menu-secondary{
+    padding: 8px 10px 0px;
+    font-size: 13px;
+    @include d-flex-wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:2px solid #e2e2e2;
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        color: #000;
+        background: #fff0;
+        border-bottom: 2px solid $primary;
+    }
+    .nav-pills .nav-link{
+        padding: 0 5px;
+        padding-bottom: 5px;
+        margin-right: 20px;
+        color: #888888;
+        border-radius: 0px;
+    }
+    .btn{
+        font-size: 13px;
+    }
+    &__content{
+        padding: 15px;
+        background: #ffffff;
+        height: calc(100vh - 290px);
+        margin-top: 13px;
+        @include shadow-1;
+        border-radius: 4px;
+    }
+}
+.accordion-sec {
+    height: calc(100vh - 326px);
+    overflow-y: scroll;
+    @include scroll-1;
+    .accordion-button{
+        border-bottom:1px solid #e2e2e2;
+        padding: 10px;
+        font-size: 13px;
+    }
+    .accordion-button:not(.collapsed){
+        background: #fff;
+    }
+    .accordion-item{
+        border-radius: 0px;
+        border:none;
+    }
+    .accordion-button::after{
+        background-size: 16px;
+        background-position:center;
+    }
+}
+.menu-info{
+    padding: 8px 08px 0px;
+    font-size: 12px;
+    @include d-flex-wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:2px solid #e2e2e2;
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        color: #000;
+        background: #fff0;
+        border-bottom: 2px solid $primary;
+    }
+    .nav-pills .nav-link{
+        padding: 0 5px;
+        padding-bottom: 5px;
+        margin-right: 5px;
+        color: #888888;
+        border-radius: 0px;
+    }
+    .btn{
+        font-size: 13px;
+    }
+    &__content{
+        padding: 15px;
+        background: #ffffff;
+        height: calc(100vh - 290px);
+        margin-top: 13px;
+        @include shadow-1;
+        border-radius: 4px;
+    }
+}

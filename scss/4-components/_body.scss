@@ -1,0 +1,164 @@
+.dash-body{
+    width: 100vw;
+    overflow-x: hidden;
+    height: calc(100vh - 60px);
+    background: #000;
+    @include d-flex;
+    &__lmenu, &__rmenu{
+        width: 60px;
+        background: #fff;
+        height: 100%;
+        @include d-flex-wrap;
+    }
+    .lmenu-list{
+        width: 100%;
+        text-align: center;
+        @include d-flex-wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+    .lmenu-item{
+        cursor: pointer;
+        @include d-flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        img{
+            display: block;
+            width:20px;
+            margin: 0px auto;
+            margin-bottom: 5px;
+        }
+        img.active{
+            display: none;
+        }
+        label{
+            font-size: 9px;
+        }
+    }
+    .lmenu-item.active{
+        position: relative;
+        
+        img{
+            display: none;
+        }
+        img.active{
+            display: block;
+        }
+        label{
+            color: $primary;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width: 3px;
+            background: $primary;
+        }
+    }
+}
+.content{
+    background: $bg;
+    box-shadow: $body-shadow;
+    @include d-flex;
+    padding: 15px;
+    height: 100%;
+    &__listing{
+        width: 200px;
+        height: 100%;
+        &--menu{
+            padding: 5px 10px;
+            border-radius: 4px;
+            background: #fff;
+            height: 35px;
+            align-items: center;
+            @include shadow-1;
+            @include d-flex;
+            justify-content: space-between;
+            span,i{
+                font-size: 13px !important;
+            }
+        }
+        &--sec{
+            @include shadow-1;
+            margin-top: 5px;
+            height:calc(100vh - 130px);
+            overflow-y: scroll;
+            @include scroll-1;
+            background: #fff;
+            border-radius: 4px;
+            width: 100%;
+        }
+        &--item{
+            width: 100%;
+            padding: 10px;
+            @include d-flex;
+            flex-direction: column;
+            font-size: 11px;
+            line-height: 12px;
+            border-bottom: 1px solid #e2e2e2;
+            label{
+                @include d-flex;
+                justify-content: space-between;
+                &:first-child{
+                    span{
+                        &:first-child{
+                            font-weight: 600;
+                        }
+                    }
+                }
+                &:last-child{
+                    font-size: 13px;
+                }
+                span{
+                    &:last-child{
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    &__body{
+        padding-left: 15px;
+        .alert{
+            margin-bottom: 0;
+            height: 35px;
+            padding: 0px 10px;
+            font-size: 13px;
+            @include d-flex;
+            justify-content: space-between;
+            align-items: center;
+            &__message{
+                min-width: 400px;
+                width: 60%;
+                @include text-truncate;
+            }
+            &__controls{
+                width: 240px;
+                @include d-flex;
+                justify-content: space-between;
+                .btn{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+.lmenu-hide{
+    margin-left: -70px;
+}
+.rmenu-hide{
+    margin-right: -70px;
+}
+
+.graph-sec{
+    @include d-flex;
+}
+.side-info{
+    height: calc(100vh - 290px);
+    width: 250px;
+}
