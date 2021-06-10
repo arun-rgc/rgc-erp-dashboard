@@ -664,5 +664,27 @@ button {
 
 /*  5-pages  */
 /*  6-responsive  */
+@media (max-width: 1200px) {
+  .gcard {
+    height: fit-content;
+  }
+  .gcard__gimg {
+    width: 100%;
+  }
+  .content__body {
+    overflow-y: scroll;
+  }
+  .content__body::-webkit-scrollbar {
+    width: 5px;
+  }
+  .content__body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .content__body::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background: #1989e4;
+  }
+}
+
 /*  7-vendor  */
 /*# sourceMappingURL=main.css.map */

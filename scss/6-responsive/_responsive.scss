@@ -1,0 +1,12 @@
+@media(max-width:1200px){
+    .gcard{
+        height: fit-content;
+        &__gimg{
+            width: 100%;
+        }
+    }
+    .content__body{
+        overflow-y: scroll;
+        @include scroll-1
+    }
+}
