@@ -448,6 +448,7 @@ button {
 }
 
 .content__body {
+  overflow: hidden;
   padding-left: 15px;
 }
 

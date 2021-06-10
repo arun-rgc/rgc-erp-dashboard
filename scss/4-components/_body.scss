@@ -123,6 +123,7 @@
         }
     }
     &__body{
+        overflow: hidden;
         padding-left: 15px;
         .alert{
             margin-bottom: 0;
