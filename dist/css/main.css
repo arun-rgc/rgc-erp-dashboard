@@ -97,6 +97,18 @@
   font-size: 14px !important;
 }
 
+.fz-15 {
+  font-size: 15px !important;
+}
+
+.fz-16 {
+  font-size: 16px !important;
+}
+
+.fz-17 {
+  font-size: 17px !important;
+}
+
 .fw-500 {
   font-weight: 500;
 }
@@ -597,7 +609,7 @@ button {
 
 .menu-primary__content {
   background: #ffffff;
-  height: calc(100vh - 290px);
+  height: calc(100vh - 275px);
   margin-top: 13px;
   overflow: hidden;
   box-shadow: 0px 2px 4px #e2e2e2;
@@ -635,7 +647,7 @@ button {
 .menu-secondary__content {
   padding: 15px;
   background: #ffffff;
-  height: calc(100vh - 290px);
+  height: calc(100vh - 275px);
   margin-top: 13px;
   box-shadow: 0px 2px 4px #e2e2e2;
   border-radius: 4px;

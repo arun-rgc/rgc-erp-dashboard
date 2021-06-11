@@ -19,7 +19,7 @@
     &__content{
         // padding: 15px;
         background: #ffffff;
-        height: calc(100vh - 290px);
+        height: calc(100vh - 275px);
         margin-top: 13px;
         overflow: hidden;
         @include shadow-1;
@@ -52,7 +52,7 @@
     &__content{
         padding: 15px;
         background: #ffffff;
-        height: calc(100vh - 290px);
+        height: calc(100vh - 275px);
         margin-top: 13px;
         @include shadow-1;
         border-radius: 4px;
