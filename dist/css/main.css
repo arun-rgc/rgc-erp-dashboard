@@ -567,6 +567,10 @@ button {
   font-size: 20px;
 }
 
+.g-5, .gx-5 {
+  --bs-gutter-x: 30px !important;
+}
+
 .menu-primary {
   margin-top: 9px;
   font-size: 13px;
