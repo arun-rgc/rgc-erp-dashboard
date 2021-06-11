@@ -20,8 +20,7 @@
     }
        
     &::-webkit-scrollbar-thumb {
-        border-radius: 40px;
-        background: lighten($primary, 10%);  
+        background: #c3c3c3;  
     }
 }
 @mixin shadow-1 {

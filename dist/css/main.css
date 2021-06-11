@@ -135,6 +135,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  scroll-behavior: smooth;
 }
 
 ol, ul {
@@ -393,8 +394,10 @@ button {
 
 .content__listing--menu {
   padding: 5px 10px;
-  border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   background: #fff;
+  border-bottom: 1px solid #e2e2e2;
   height: 35px;
   align-items: center;
   box-shadow: 0px 2px 4px #e2e2e2;
@@ -408,11 +411,11 @@ button {
 
 .content__listing--sec {
   box-shadow: 0px 2px 4px #e2e2e2;
-  margin-top: 5px;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 126px);
   overflow-y: scroll;
   background: #fff;
-  border-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   width: 100%;
 }
 
@@ -425,13 +428,12 @@ button {
 }
 
 .content__listing--sec::-webkit-scrollbar-thumb {
-  border-radius: 40px;
-  background: #1989e4;
+  background: #c3c3c3;
 }
 
 .content__listing--item {
   width: 100%;
-  padding: 10px;
+  padding: 12px 10px;
   display: flex;
   flex-direction: column;
   font-size: 11px;
@@ -450,6 +452,7 @@ button {
 
 .content__listing--item label:last-child {
   font-size: 13px;
+  margin-top: 10px;
 }
 
 .content__listing--item label span:last-child {
@@ -515,6 +518,10 @@ button {
   width: 30px;
   height: 30px;
   overflow: hidden;
+}
+
+.link-btn i {
+  font-size: 20px;
 }
 
 .menu-primary {
@@ -601,8 +608,7 @@ button {
 }
 
 .accordion-sec::-webkit-scrollbar-thumb {
-  border-radius: 40px;
-  background: #1989e4;
+  background: #c3c3c3;
 }
 
 .accordion-sec .accordion-button {
@@ -681,8 +687,7 @@ button {
     background: #f1f1f1;
   }
   .content__body::-webkit-scrollbar-thumb {
-    border-radius: 40px;
-    background: #1989e4;
+    background: #c3c3c3;
   }
 }
 
