@@ -376,11 +376,11 @@ button {
 }
 
 .dash-body .lmenu-item.active span {
-  color: #146db6;
+  color: #53a9f9;
 }
 
 .dash-body .lmenu-item.active label {
-  color: #146db6;
+  color: #53a9f9;
   font-weight: 500;
 }
 
@@ -391,7 +391,35 @@ button {
   top: 0px;
   height: 100%;
   width: 3px;
-  background: #146db6;
+  background: #53a9f9;
+}
+
+.dash-body .rmenu-list {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.dash-body .rmenu-item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.dash-body .rmenu-item span {
+  font-size: 23px;
+  color: #787878;
+}
+
+.dash-body .rmenu-item.active {
+  position: relative;
+}
+
+.dash-body .rmenu-item.active span {
+  color: #53a9f9;
 }
 
 .content {
@@ -585,7 +613,7 @@ button {
 .menu-secondary .nav-pills .nav-link.active, .menu-secondary .nav-pills .show > .nav-link {
   color: #000;
   background: #fff0;
-  border-bottom: 2px solid #146db6;
+  border-bottom: 2px solid #53a9f9;
 }
 
 .menu-secondary .nav-pills .nav-link {
@@ -659,7 +687,7 @@ button {
 .menu-info .nav-pills .nav-link.active, .menu-info .nav-pills .show > .nav-link {
   color: #000;
   background: #fff0;
-  border-bottom: 2px solid #146db6;
+  border-bottom: 2px solid #53a9f9;
 }
 
 .menu-info .nav-pills .nav-link {

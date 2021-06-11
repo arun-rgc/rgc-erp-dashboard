@@ -50,6 +50,30 @@
             background: $primary;
         }
     }
+    .rmenu-list{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .rmenu-item{
+        cursor: pointer;
+        @include d-flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        width: 100%;
+        text-align: center;
+        
+        span{
+            font-size: 23px;
+            color: #787878;
+        }
+    }
+    .rmenu-item.active{
+        position: relative;
+        span{
+            color: $primary;
+        }
+    }
 }
 .content{
     background: $bg;
