@@ -10,7 +10,7 @@
         border: none;
         font-size: 13px;
         outline: none !important;
-        @include shadow-2;
+        border: 1px solid #e2e2e2;
         border-radius: 40px;
     }
     i{  
@@ -28,4 +28,5 @@
 }
 .form-label{
     font-size: 13px;
+    margin-bottom: 0 !important;
 }

@@ -13,26 +13,19 @@
     .lmenu-list{
         width: 100%;
         text-align: center;
-        @include d-flex-wrap;
-        justify-content: center;
-        align-items: flex-start;
         margin-top: 15px;
     }
     .lmenu-item{
         cursor: pointer;
         @include d-flex;
         flex-direction: column;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         width: 100%;
         text-align: center;
-        img{
-            display: block;
-            width:20px;
-            margin: 0px auto;
-            margin-bottom: 5px;
-        }
-        img.active{
-            display: none;
+        
+        span{
+            font-size: 23px;
+            color: #787878;
         }
         label{
             font-size: 9px;
@@ -40,15 +33,12 @@
     }
     .lmenu-item.active{
         position: relative;
-        
-        img{
-            display: none;
-        }
-        img.active{
-            display: block;
+        span{
+            color: $primary;
         }
         label{
             color: $primary;
+            font-weight: 500;
         }
         &:before{
             content: "";

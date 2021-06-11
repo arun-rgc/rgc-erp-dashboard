@@ -105,6 +105,26 @@
   font-weight: 600;
 }
 
+.material-icons {
+  font-family: 'Material Icons' !important;
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons Outlined' !important;
+}
+
+.material-icons-two-tone {
+  font-family: 'Material Icons Two Tone' !important;
+}
+
+.material-icons-round {
+  font-family: 'Material Icons Round' !important;
+}
+
+.material-icons-sharp {
+  font-family: 'Material Icons Sharp' !important;
+}
+
 /*  3-utilities  */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -222,7 +242,7 @@ button {
   border: none;
   font-size: 13px;
   outline: none !important;
-  box-shadow: 0px 0px 4px #e2e2e2;
+  border: 1px solid #e2e2e2;
   border-radius: 40px;
 }
 
@@ -242,6 +262,7 @@ button {
 
 .form-label {
   font-size: 13px;
+  margin-bottom: 0 !important;
 }
 
 .topbar {
@@ -262,6 +283,7 @@ button {
 
 .topbar__lmenu span, .topbar__rmenu span {
   margin-top: 4px;
+  color: #787878;
 }
 
 .topbar__content {
@@ -274,6 +296,12 @@ button {
 .topbar__content--lsec {
   align-items: center;
   width: 215px;
+  display: flex;
+  align-items: center;
+}
+
+.topbar__content--lsec img {
+  width: 105px;
 }
 
 .topbar__content--rsec {
@@ -322,10 +350,6 @@ button {
 .dash-body .lmenu-list {
   width: 100%;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
   margin-top: 15px;
 }
 
@@ -333,20 +357,14 @@ button {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   width: 100%;
   text-align: center;
 }
 
-.dash-body .lmenu-item img {
-  display: block;
-  width: 20px;
-  margin: 0px auto;
-  margin-bottom: 5px;
-}
-
-.dash-body .lmenu-item img.active {
-  display: none;
+.dash-body .lmenu-item span {
+  font-size: 23px;
+  color: #787878;
 }
 
 .dash-body .lmenu-item label {
@@ -357,16 +375,13 @@ button {
   position: relative;
 }
 
-.dash-body .lmenu-item.active img {
-  display: none;
-}
-
-.dash-body .lmenu-item.active img.active {
-  display: block;
+.dash-body .lmenu-item.active span {
+  color: #146db6;
 }
 
 .dash-body .lmenu-item.active label {
   color: #146db6;
+  font-weight: 500;
 }
 
 .dash-body .lmenu-item.active:before {

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/uikit.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 </head>
 <body>
 
@@ -19,7 +20,9 @@
         <!-- topbar -->
             <div class="container-fluid topbar p-0">
                 <button for="" class="btn topbar__lmenu" onclick="lmenu()">
-                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                    <span class="material-icons-outlined">
+                        menu_open
+                        </span>
                 </button>
                 <div class="topbar__content col">
                     <div class="topbar__content--lsec">
@@ -48,6 +51,7 @@
                             <i class="bi bi-chat-left"></i>
                             <span class="notification active"></span>
                         </button>
+                        
                         <div class="user-sec ms-3">
                             <label for="" class="mb-0 me-1">William Joskinode</label>
                             <img src="../assets/avatar 1.png" alt="">
@@ -55,7 +59,9 @@
                     </div>
                 </div>
                 <button for="" class="btn topbar__rmenu" onclick="rmenu()">
-                    <span uk-icon="menu"></span>
+                    <span class="material-icons-outlined">
+                        menu
+                        </span>
                 </button>
             </div>
         <!-- topbar ends -->
@@ -68,40 +74,47 @@
             <div id="lmenu" class="dash-body__lmenu">
                 <div class="lmenu-list">
                     <label for="" class="lmenu-item active">
-                        <img class="" src="../assets/icons/dashboard.svg" alt="" srcset="">
-                        <img class="active" src="../assets/icons/dashboard-active.svg" alt="" srcset="">
+                       
+                        <span class="material-icons-outlined">home</span>
                         <label for="">Dashboard</label>
                     </label>
                     <label for="" class="lmenu-item ">
-                        <img class="" src="../assets/icons/module.svg" alt="" srcset="">
-                        <img class="active" src="../assets/icons/module-active.svg" alt="" srcset="">
+                        
+                        <span class="material-icons-outlined">
+                            view_module
+                            </span>
                         <label for="">Module</label>
                     </label>
                     <label for="" class="lmenu-item ">
-                        <img class="" src="../assets/icons/apps.svg" alt="" srcset="">
-                        <img class="active" src="../assets/icons/apps-active.svg" alt="" srcset="">
+                        <span class="material-icons-outlined">
+                            apps
+                            </span>
                         <label for="">Apps</label>
                     </label>
                     <label for="" class="lmenu-item ">
-                        <img class="" src="../assets/icons/workplace.svg" alt="" srcset="">
-                        <img class="active" src="../assets/icons/workplace-active.svg" alt="" srcset="">
+                        <span class="material-icons-outlined">
+                            apartment
+                            </span>
                         <label for="">Workplace</label>
                     </label>
                     <label for="" class="lmenu-item ">
-                        <img class="" src="../assets/icons/setting.svg" alt="" srcset="">
-                        <img class="active" src="../assets/icons/setting-active.svg" alt="" srcset="">
+                        <span class="material-icons-outlined">
+                            settings
+                            </span>
                         <label for="">Configuration</label>
                     </label>
                 </div>
                 <div class="lmenu-list mt-auto">
                     <label for="" class="lmenu-item">
-                        <img class="" src="../assets/icons/marketplace.svg" alt="" srcset="">
-                        <img class="active" src="../assets/icons/marketplace-active.svg" alt="" srcset="">
+                        <span class="material-icons-outlined">
+                            storefront
+                            </span>
                         <label for="">Market</label>
                     </label>
                     <label for="" class="lmenu-item ">
-                        <img class="" src="../assets/icons/help.svg" alt="" srcset="">
-                        <img class="active" src="../assets/icons/help-active.svg" alt="" srcset="">
+                        <span class="material-icons-outlined">
+                            help_outline
+                            </span>
                         <label for="">Help</label>
                     </label>
                     
@@ -588,6 +601,7 @@
 
 
     <!-- WEB APP -->
+    <!-- <script src="https://kit.fontawesome.com/ddcadd200c.js" crossorigin="anonymous"></script> -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
