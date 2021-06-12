@@ -205,6 +205,8 @@ button {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  box-shadow: 0px 2px 4px #e2e2e2;
+  border-radius: 4px;
 }
 
 .gcard__gimg {

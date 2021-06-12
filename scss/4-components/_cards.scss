@@ -4,6 +4,8 @@
     height: 90px;
     @include d-flex-wrap;
     align-items: center;
+    @include shadow-1;
+    border-radius: 4px;
     &__gimg{
         display: block;
         margin-top: auto;
