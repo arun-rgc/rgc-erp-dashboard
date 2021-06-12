@@ -1,4 +1,12 @@
+@media(min-width:1200px){
+    .tab-sidebar{
+        display: none;
+    }
+}
 @media(max-width:1200px){
+    .dash-body{
+        height: 100vh;
+    }
     .gcard{
         height: fit-content;
         &__gimg{
@@ -8,5 +16,26 @@
     .content__body{
         overflow-y: scroll;
         @include scroll-1
+    }
+    .content__listing{
+        display: none;
+    }
+    .content{
+        padding: 0;
+    }
+    .dash-body__lmenu{
+        display: none;
+    }
+    .dash-body__rmenu{
+        display: none;
+    }
+    .topbar {
+        display: none;
+    }
+    .content__body {
+        padding: 15px;
+    }
+    .content__listing--sec {
+        height: calc(100vh - 95px);
     }
 }

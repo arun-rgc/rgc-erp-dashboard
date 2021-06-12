@@ -240,6 +240,7 @@ button {
 
 .gcard__detail--subtitle {
   font-size: 11px;
+  width: 100%;
 }
 
 .search-box {
@@ -343,6 +344,57 @@ button {
 
 .topbar__content--rsec button .notification.active {
   display: block;
+}
+
+.tab-sidebar {
+  width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.tab-sidebar__header {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.tab-sidebar .tab-side-menu {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.tab-sidebar .tab-logo {
+  width: 80px;
+}
+
+.tab-sidebar .side-section {
+  display: flex;
+  width: 58px;
+}
+
+.tab-sidebar__searchbox {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.tab-sidebar__searchbox .search-box {
+  margin: 5px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.tab-sidebar__searchbox .search-box i {
+  left: 18px;
+}
+
+.tab-sidebar__searchbox .search-box input {
+  border: none;
+  height: 35px;
+  border-radius: 4px;
+  background: #FAFAFA;
 }
 
 .dash-body {
@@ -585,6 +637,10 @@ button {
   --bs-gutter-x: 30px !important;
 }
 
+.no-alert {
+  height: calc(100vh - 225px);
+}
+
 .menu-primary {
   margin-top: 9px;
   font-size: 13px;
@@ -731,7 +787,16 @@ button {
 
 /*  5-pages  */
 /*  6-responsive  */
+@media (min-width: 1200px) {
+  .tab-sidebar {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
+  .dash-body {
+    height: 100vh;
+  }
   .gcard {
     height: fit-content;
   }
@@ -749,6 +814,27 @@ button {
   }
   .content__body::-webkit-scrollbar-thumb {
     background: #c3c3c3;
+  }
+  .content__listing {
+    display: none;
+  }
+  .content {
+    padding: 0;
+  }
+  .dash-body__lmenu {
+    display: none;
+  }
+  .dash-body__rmenu {
+    display: none;
+  }
+  .topbar {
+    display: none;
+  }
+  .content__body {
+    padding: 15px;
+  }
+  .content__listing--sec {
+    height: calc(100vh - 95px);
   }
 }
 

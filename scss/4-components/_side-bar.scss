@@ -1,0 +1,41 @@
+.tab-sidebar{
+    width: 230px;
+    @include d-flex-wrap; 
+    background: #fff;  
+    &__header{
+        height: 40px;
+        width: 100%;
+        @include d-flex;
+        align-items: center;
+    }
+    .tab-side-menu{
+        @include d-flex;
+        align-items: center;
+        width: fit-content;
+    }
+    .tab-logo{
+        width: 80px;
+    }
+    .side-section{
+        @include d-flex;
+        width: 58px;
+    }
+    &__searchbox{
+        width: 100%;
+        margin-bottom: 10px;
+        .search-box{
+            margin: 5px 0px;
+            @include d-flex;
+            justify-content: center;
+            i {
+                left: 18px;
+            }
+            input{
+                border: none;
+                height: 35px;
+                border-radius: 4px;
+                background:#FAFAFA;
+            }
+        }
+    }
+}
