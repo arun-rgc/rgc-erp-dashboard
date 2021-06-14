@@ -67,8 +67,48 @@
     .content__body{
         height: fit-content;
         overflow-y: inherit;
+        width: 100%;
     }
     .mobile-sidebar__header{
         display: flex !important;
+    }
+    .gcard__detail--title {
+        font-size: 17px;
+        margin-right: 15px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        line-height: normal;
+    }
+    .gcard__detail--price {
+        font-size: 17px;
+        border-right: 2px solid;
+        padding-right: 11px;
+        display: flex;
+        align-items: center;
+        line-height: normal;
+    }
+    .gcard__detail--subtitle {
+        font-size: 13px;
+        width: fit-content;
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        line-height: normal;
+    }
+}
+
+@media(max-width:450px){
+    .gcard__img {
+        width: 40px;
+    }
+    .gcard__detail--title {
+        font-size: 13px;
+    }
+    .gcard__detail--price {
+        font-size: 13px;
+    }
+    .gcard__detail--subtitle {
+        font-size: 10px;
     }
 }
