@@ -347,7 +347,7 @@ button {
 }
 
 .tab-sidebar {
-  width: 230px;
+  width: 200px;
   display: flex;
   flex-wrap: wrap;
   background: #fff;
@@ -381,6 +381,7 @@ button {
 }
 
 .tab-sidebar__searchbox .search-box {
+  height: inherit !important;
   margin: 5px 0px;
   display: flex;
   justify-content: center;
@@ -584,7 +585,7 @@ button {
 }
 
 .content__body .alert__message {
-  min-width: 400px;
+  min-width: 275px;
   width: 60%;
   white-space: nowrap;
   overflow: hidden;
@@ -638,7 +639,7 @@ button {
 }
 
 .no-alert {
-  height: calc(100vh - 225px);
+  height: calc(100vh - 225px) !important;
 }
 
 .menu-primary {
@@ -805,6 +806,7 @@ button {
   }
   .content__body {
     overflow-y: scroll;
+    width: calc(100vh - 200px);
   }
   .content__body::-webkit-scrollbar {
     width: 5px;
@@ -835,6 +837,21 @@ button {
   }
   .content__listing--sec {
     height: calc(100vh - 95px);
+  }
+}
+
+@media (max-width: 768px) {
+  .side-info {
+    width: 100%;
+    margin-bottom: 50px;
+    height: inherit;
+  }
+  .menu-primary__content {
+    height: fit-content;
+  }
+  .accordion-sec {
+    height: fit-content;
+    overflow-y: inherit;
   }
 }
 

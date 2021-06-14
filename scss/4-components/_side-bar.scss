@@ -1,5 +1,5 @@
 .tab-sidebar{
-    width: 230px;
+    width: 200px;
     @include d-flex-wrap; 
     background: #fff;  
     &__header{
@@ -21,9 +21,11 @@
         width: 58px;
     }
     &__searchbox{
+        
         width: 100%;
         margin-bottom: 10px;
         .search-box{
+            height: inherit !important;
             margin: 5px 0px;
             @include d-flex;
             justify-content: center;

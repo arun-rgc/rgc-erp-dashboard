@@ -151,7 +151,7 @@
             justify-content: space-between;
             align-items: center;
             &__message{
-                min-width: 400px;
+                min-width: 275px;
                 width: 60%;
                 @include text-truncate;
             }
