@@ -41,3 +41,27 @@
         }
     }
 }
+.mobile-sidebar__header{
+    background: #fff;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    @include d-flex;
+    display: none !important;
+    align-items: center;
+    .side-section{
+        @include d-flex;
+        width: 58px;
+    }
+    .mobile-side-menu{
+        @include d-flex;
+        align-items: center;
+        width: fit-content;
+    }
+    .mobile-logo{
+        width: 80px;
+    }
+}
+    
+    
+    

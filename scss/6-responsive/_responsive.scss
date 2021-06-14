@@ -57,5 +57,18 @@
         height: fit-content;
         overflow-y: inherit;
     }
-    
+    .tab-sidebar{
+        display:none
+    }
+    .content{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .content__body{
+        height: fit-content;
+        overflow-y: inherit;
+    }
+    .mobile-sidebar__header{
+        display: flex !important;
+    }
 }
